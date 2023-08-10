@@ -32,11 +32,11 @@ public class OdontologoDaoH2  implements IDao<Odontologo> {
 
             ResultSet rs = ps.getGeneratedKeys();
             while (rs.next()){
-                odontologo.setId(rs.getInt(1));
+                odontologo1.setId(rs.getInt(1));
             }
 
             connection.commit();
-            if (odontologo.getId() == 0) {
+            if (odontologo1.getId() == 0) {
                 LOGGER.error("No fue posible registrar al Odontologo");
             } else {
                 LOGGER.info("Se ha registrado el Odontologo: " + odontologo1);
