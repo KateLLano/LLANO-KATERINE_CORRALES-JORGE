@@ -83,8 +83,11 @@ public class OdontologoDaoH2  implements IDao<Odontologo> {
                 odontologos.add(odontologo);
             }
 
-            if(odontologos == null) LOGGER.error("No se ha encontrado el odontologo");
-            else LOGGER.info("Se ha encontrado el odontologo: " + odontologos);
+            if(odontologos.isEmpty()) {
+                LOGGER.error("No se ha encontraron odontologos");
+            } else {
+                LOGGER.info("Se encontraron los odontologos: " + odontologos);
+            }
 
 
 

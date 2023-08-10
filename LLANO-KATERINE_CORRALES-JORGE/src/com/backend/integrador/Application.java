@@ -1,6 +1,5 @@
-package com.backend.integrador.service;
+package com.backend.integrador;
 
-import com.backend.integrador.dao.impl.OdontologoDaoH2;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;
