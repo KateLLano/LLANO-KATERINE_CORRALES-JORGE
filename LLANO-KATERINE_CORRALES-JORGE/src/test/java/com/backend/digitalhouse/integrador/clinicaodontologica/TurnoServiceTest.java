@@ -6,11 +6,7 @@ import com.backend.digitalhouse.integrador.clinicaodontologica.dto.entrada.pacie
 import com.backend.digitalhouse.integrador.clinicaodontologica.dto.entrada.turno.TurnoEntradaDto;
 import com.backend.digitalhouse.integrador.clinicaodontologica.dto.salida.odontologo.OdontologoSalidaDto;
 import com.backend.digitalhouse.integrador.clinicaodontologica.dto.salida.paciente.PacienteSalidaDto;
-import com.backend.digitalhouse.integrador.clinicaodontologica.dto.salida.turno.OdontologoTurnoSalidaDto;
-import com.backend.digitalhouse.integrador.clinicaodontologica.dto.salida.turno.PacienteTurnoSalidaDto;
-import com.backend.digitalhouse.integrador.clinicaodontologica.dto.salida.turno.TurnoSalidaDto;
 import com.backend.digitalhouse.integrador.clinicaodontologica.exceptions.BadRequestException;
-import com.backend.digitalhouse.integrador.clinicaodontologica.exceptions.ResourceNotFoundException;
 import com.backend.digitalhouse.integrador.clinicaodontologica.service.impl.OdontologoService;
 import com.backend.digitalhouse.integrador.clinicaodontologica.service.impl.PacienteService;
 import com.backend.digitalhouse.integrador.clinicaodontologica.service.impl.TurnoService;
@@ -19,7 +15,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import javax.persistence.NamedStoredProcedureQueries;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
